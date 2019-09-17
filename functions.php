@@ -13,3 +13,22 @@ function agregar_css_js(){
 
 }
 add_action( 'wp_enqueue_scripts', 'agregar_css_js' );
+
+
+function tema1_widgets(){
+
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'widgets-derecha',
+            'name'          => __( 'Widget Derecha' ),
+            'description'   => __( 'Arrastra lo que quieras' ),
+            'before_widget' => '<div class="card-body">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4>',
+            'after_title'   => '</h4><hr>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+add_action( 'widgets_init', 'tema1_widgets' );

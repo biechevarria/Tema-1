@@ -43,14 +43,7 @@
         <!-- Fin de Entradas -->
         
         <!-- Sidebar -->
-        <div class="col-lg-3">
-            <div class="card-body">
-              <h4>Publicidad</h4>
-              <hr>
-              <img src="img/vertical.jpg" class="img-fluid" alt="">
-            </div>
-            
-          </div>
+        <?php get_sidebar(); ?>
         <!-- Fin de Sidebar -->
       </div>
     </div>
