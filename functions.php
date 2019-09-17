@@ -3,6 +3,7 @@
 // Soporte de imagenes destacadas
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 150, 150, true );
  }
 
 function agregar_css_js(){
@@ -32,3 +33,13 @@ function tema1_widgets(){
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 add_action( 'widgets_init', 'tema1_widgets' );
+
+// function add_image_size( 'imagen-mediana', 300, 300, false ) {
+//     global $_wp_additional_image_sizes;
+ 
+//     $_wp_additional_image_sizes[ $name ] = array(
+//         'width'  => absint( $width ),
+//         'height' => absint( $height ),
+//         'crop'   => $crop,
+//     );
+// }
