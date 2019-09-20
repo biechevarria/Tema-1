@@ -14,10 +14,9 @@ function agregar_css_js(){
 
 
     // JS Personalizados
-    wp_enqueue_script( 'app-js' ,get_template_directory_uri() . '/js/estilos.js', 
-    array('bootstrap-js'));
+    wp_enqueue_script('app-js', get_template_directory_uri() . '/js/estilos.js', array('bootstrap-js'));
 }
-add_action( 'wp_enqueue_scripts', 'agregar_css_js' );
+add_action('wp_enqueue_scripts', 'agregar_css_js');
 
 
 function tema1_widgets(){

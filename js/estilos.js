@@ -1,4 +1,4 @@
-console.log('hola')
+console.log('ahuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu');
 
-const formularioBuscar = document.querySelector('#searchform #s');
-console.log(formularioBuscar)
+const campitoBuscar = document.querySelector('#searchform');
+console.log(campitoBuscar);
