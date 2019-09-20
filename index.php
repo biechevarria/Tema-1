@@ -14,7 +14,7 @@
             </a>
             <p class="small mb-0">Fecha: <?php the_time('j F, Y'); ?></p>
             <p class="small mb-0">Autor: <?php the_author(); ?></p>
-            <p class="small">Categorías: <?php the_category( '/'); ?> | Etiqueta: <?php the_tags('', '/', ''); ?>
+            <p class="small">Categorías: <?php the_category( ' / '); ?> | Etiqueta: <?php the_tags('', ' / ', ''); ?>
             <!-- Array para mostrar las imagenes destacadas y sus clases -->
             <?php
                   if ( has_post_thumbnail() ) {
@@ -51,5 +51,4 @@
 
     <?php get_footer(); ?>
 
-  </body>
-</html>
+

@@ -12,6 +12,10 @@ function agregar_css_js(){
     wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'), '1.14.7', true);
     wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('popper'), '4.3', true);
 
+
+    // JS Personalizados
+    wp_enqueue_script( 'app-js' ,get_template_directory_uri() . '/js/estilos.js', 
+    array('bootstrap-js'));
 }
 add_action( 'wp_enqueue_scripts', 'agregar_css_js' );
 
@@ -24,7 +28,7 @@ function tema1_widgets(){
             'id'            => 'widgets-derecha',
             'name'          => __( 'Widget Derecha' ),
             'description'   => __( 'Arrastra lo que quieras' ),
-            'before_widget' => '<div class="card-body">',
+            'before_widget' => '<div class="card-body widgets">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4>',
             'after_title'   => '</h4><hr>',
